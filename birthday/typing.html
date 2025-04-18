@@ -1,0 +1,113 @@
+<!-- 
+Oh hey 👀... i know tujhe iske baare mein nhi pata chalega lol
+
+Congrats, detective — you've unlocked the SECRET message. 🎉  
+No gold. No treasure. Just me, Khushi, being dramatic and extra for someone *very* sweetie? 💅
+
+This project? Made with 90% ✨delulu energy✨, 5% “aww that’s cute” vibes, and 5% “IDK what I’m doing but let’s slay anyway.”
+also baby I poured my heart into this surprise and you better cry happy tears(jk) energy 😭🎁
+
+If you're reading this, you're either:
+a) My sunshine being nosy 👀  
+b) A dev who opened DevTools like a true hacker (which you are not so dont think high of yourself, samjha na?)
+c) Lost? Blink twice.
+
+Anyway... you’re loved. You’re appreciated.  
+Now close this tab and go hydrate or something 😌💖
+
+–from  SOMEONE💀💕
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+...
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>A Lil' Note 💌</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #8B0000;
+      color: white;
+      font-family: 'Comic Sans MS', cursive;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .typewriter {
+      max-width: 90%;
+      width: 600px;
+      white-space: pre-wrap;
+      border: 2px solid white;
+      border-radius: 20px;
+      padding: 30px;
+      background-color: rgba(255, 255, 255, 0.1);
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+      font-size: 1.2rem;
+    }
+
+    .typing {
+      border-right: 2px solid white;
+      padding-right: 4px;
+      animation: blink 0.7s step-end infinite;
+    }
+
+    @keyframes blink {
+      from, to { border-color: transparent }
+      50% { border-color: white }
+    }
+  </style>
+</head>
+<body>
+
+    
+  <div class="typewriter">
+    <span id="text" class="typing"></span>
+  </div>
+
+  <script>
+    const message = `Hey someone... I know this isn’t much, but I wanted to do something a little silly and it's nuts for me to make something like this so dont worry. 
+and baby you are sunshine so i had to give this a chance to showcast my skill(silly me haha) something which makes you think about me more, and I hope this brought even a tiny smile. 
+Thanks for being a kind soul and for being a comforting person in this chaos and messy world, and ofcourse for your kind words 💖 
+
+— From your SOMEONE aka khushi 💀💕`;
+
+    let i = 0;
+    function typeWriter() {
+      if (i < message.length) {
+        document.getElementById("text").textContent += message.charAt(i);
+        i++;
+        setTimeout(typeWriter, 40);
+      }
+    }
+
+    window.onload = typeWriter;
+  </script>
+
+  <!-- Secret music trigger -->
+  <audio id="hiddenMusic" loop>
+    <source src="birthday-song.mp3" type="audio/mpeg">
+  </audio>
+  
+  <script>
+    window.addEventListener("click", function () {
+      document.getElementById("hiddenMusic").play();
+    }, { once: true });
+  </script>
+  
+    
+
+</body>
+</html>

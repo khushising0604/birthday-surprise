@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hey You!</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body onload="showFirstCard()">
+
+  <!-- First Modal -->
+  <div class="modal" id="modal1">
+    <div class="card">
+      <p>Hi cutie! 👀 Just wanted to say something...</p>
+      <button onclick="nextCard()">Okay 🥺</button>
+    </div>
+  </div>
+
+  <!-- Floating Emojis -->
+  <div class="floating-elements">
+    <span class="heart">❤️</span>
+    <span class="heart">❤️</span>
+    <span class="heart">❤️</span>
+    <span class="sunflower">🌻</span>
+    <span class="sunflower">🌻</span>
+    <span class="sparkle">✨</span>
+    <span class="sparkle">✨</span>
+  </div>
+
+  <!-- Second Modal -->
+  <div class="modal hidden" id="modal2">
+    <div class="card">
+      <p>
+        ik you don’t like fancy things 😅<br>
+        but this is who I am, so I made this cute thing for you 💖<br><br>
+        Wanna see what I created?
+      </p>
+      <div class="btns">
+        <button onclick="goToSurprise()">Yes!! 💕</button>
+        <button onclick="nope()">No 😶</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
